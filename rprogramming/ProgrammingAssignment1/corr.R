@@ -9,7 +9,7 @@ corr <- function(directory, threshold = 0) {
     
     if(cc > threshold) {
       corre <- cor(d$sulfate[ccl], d$nitrate[ccl])
-      res <- append(res, round(corre, 5))
+      res <- append(res, corre)
     }
   }
 
